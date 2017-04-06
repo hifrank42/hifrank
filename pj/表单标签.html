@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+    <style type="text/css">
+        textarea{
+            resize:none;
+        }
+    </style>
+</head>
+<body>
+<form action="http://www.jiayuan.com/?bd=1">
+    <fieldset>
+        <legend>注册界面</legend>
+    <p>
+        <label for="name2">姓名：</label>
+    <input type="text" value="谁在床上" name="name" id="name1" list="n"></p>
+    <datalist id="n">
+        <option>李登</option>
+        <option>意识剥离实体</option>
+        <option>阿廖沙</option>
+        <option>谁在车上</option>
+    </datalist>
+    <p>
+    <label>邮箱： <input type="email" name="mail" id="name2"></label>
+    </p>
+   <p>
+       <label >域名： <input type="url" name="url"></label>
+   </p>
+    <p>
+        <label>手机号： <input type="number" name="phone"></label>
+    </p>
+    <p> 
+      <label for="pwd">密码：</label><input type="password" name="password" id="pwd">
+  </p>
+    <p>
+        <label>出生日期： <input type="date" name="date"></label>
+    </p>
+
+    <label>帽子的颜色： <input type="color" name="green"></label>
+    <br>
+    所在地：
+    <select>
+        <optgroup label="东南亚"></optgroup>
+        <option selected>泰国</option>
+    <option>日本</option>
+    <option>韩国</option>
+    <option>钓鱼岛</option>
+        </optgroup>
+        <optgroup label="其他星球">
+            <option>火星</option>
+            <option>火星</option>
+            <option>火星</option>
+            <option>火星</option>
+        </optgroup>
+</select>
+    <br>
+    性别：
+    <input type="radio" name="gender">女
+    <input type="radio" name="gender">女人
+    <input type="radio" name="gender" checked="checked">人妖
+    <br>
+    喜欢什么样的女生？
+    <br>
+    <textarea name="备注" id="类型" cols="20" rows="3"></textarea>
+    <br>
+    爱好：
+    <input type="checkbox" checked name="fav" value="foot">足浴
+    <input type="checkbox" checked name="fav" value="koujiao">抠脚
+    <input type="checkbox" checked name="fav" value="seepian">看片
+    <br>
+    <input type="checkbox" checked name="fav">是否同意同性交友
+    <br>
+    <input type="button" value="就快成功了>.<">
+    <br>
+    <input type="image" src="新建文件夹/Metro_Last_Light_Concept_Art_VT_16.jpg"  onclick="alert(jhr520)">
+    <br>
+    <input type="reset" value="清空">
+    <input type="submit">
+    <input type="hidden" name="asd123" value="123">
+    </fieldset>
+</form>
+
+</body>
+</html>
