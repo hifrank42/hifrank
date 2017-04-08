@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频&详情概要&marquee标签&被废弃的标签&字符实体</title>
+    <style type="text/css">
+         .one{
+
+
+         }
+    </style>
+</head>
+<body>
+<video src=""  autoplay="autoplay"></video>
+<!--
+autoplay：自动播放
+controls：进度条
+poster：站位图片
+loop：循环
+preload：预加载，与autoplay冲突
+muted：静音
+width：
+height：
+-->
+<!--为了解决各浏览器的对视频的不兼容,html5media-->
+<video>
+    <source src="webm" type="video/webm"></source>
+    <source src="mp4" type="video/mp4"></source>
+    <source src="ogg" type="video/ogg"></source>
+</video>
+<audio>
+    <source src=".mp3" type="audio/mp3">
+    <source src=".Ogg" type="audio/Ogg">
+    <source src=".Wav" type="audio/Wav">
+</audio>
+<details>
+    <summary>HTML 5</summary>
+<p>    This document teaches you everything you have to learn about HTML 5.
+</p>
+</details>
+<!--不是W3C推荐标签，但对各大浏览器支持都不错-->
+<!--跑马灯-->
+<marquee behavior="alternate" direction="right" scrollamount="100">跑马灯</marquee>
+<marquee behavior="slide" direction="right">跑马灯</marquee>
+<marquee behavior="" direction="up" loop="1">跑马灯</marquee>
+<marquee behavior="" direction="down" scrollamount="10">跑马灯</marquee>
+<marquee behavior="" direction="down" scrollamount="10"><img src="QQ截图20170405152651.png" alt="123"></marquee>
+<br>
+<!--废弃了的标签，因为修改了样式，没有任何语义，企业开发中不到万不得已不要使用-->
+<!--一定要用的话，一般作为CSS的钩子来使用-->
+<!--br被p取代 hr修改了样式 font修改字体 b u i s-->
+<b>w</b> bold加粗==strong:定义重要性强调文字
+<u>w</u> underline下划线==ins（）：定义插入的文字
+<i>w</i> italic文本倾斜==em（emphasized）：定义强调的文字
+<s>w</s> strikethrough 删除线==del（delete）：定义被删除的文字
+<hr>
+<p class="one">我是文字</p>
+<strong>w</strong>
+<ins>w</ins>
+<del>w</del>
+<em>w</em>
+<hr>
+我&nbsp;&nbsp;&nbsp;（空格）爱你
+<!--字符实体，有的html字符在html中有特殊含义的，不能再浏览器中直接显示出来-->
+<p>学习了&gt;h1&lt;</p>
+&gt;（greater than）大于号
+&lt;(less than)小于
+&copy;版权符号
+</body>
+</html>
